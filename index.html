@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📝 Список Задач</h1>
+            <p>Планируйте свои дела</p>
+        </div>
+
+        <form class="todo-form">
+            <div class="form-group">
+                <input type="text" class="todo-input" placeholder="Введите новую задачу..." required>
+                <button type="submit" class="add-btn">Добавить</button>
+            </div>
+        </form>
+
+        <div class="todo-list">
+            <div class="todo-item">
+                <input type="checkbox">
+                <span class="todo-text">Пример задачи 1</span>
+            </div>
+
+            <div class="todo-item completed">
+                <input type="checkbox" checked>
+                <span class="todo-text">Выполненная задача</span>
+            </div>
+
+            <div class="todo-item">
+                <input type="checkbox">
+                <span class="todo-text">Пример задачи 2</span>
+            </div>
+
+            <div class="todo-item">
+                <input type="checkbox">
+                <span class="todo-text">Еще одна важная задача</span>
+            </div>
+        </div>
+
+        <div class="stats">
+            Всего задач: 4 - Выполнено: 1 - Осталось: 3
+        </div>
+    </div>
+</body>
+
+</html>
