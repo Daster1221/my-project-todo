@@ -38,6 +38,13 @@ body.dark-theme {
     text-align: center;
 }
 
+.light-theme .header{
+    background: #4057ea;
+}
+.dark-theme .header{
+    background-color: #1f309f;
+}
+
 .header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
@@ -47,6 +54,14 @@ body.dark-theme {
     padding: 20px;
     background: #f5f5f5;
     border-bottom: 1px solid #ddd;
+}
+.light-theme .todo-form{
+    background: #f5f5f5;
+}
+
+.dark-theme .todo-form{
+    background-color: #1f309f;
+    border: 5px solid rgb(0, 0, 0);
 }
 
 .form-group {
@@ -74,6 +89,15 @@ body.dark-theme {
 
 .add-btn:hover {
     background: #1f309f;
+}
+
+.light-theme .add-btn{
+    background: #1f309f;
+}
+
+.dark-theme .add-btn{
+    background-color: white;
+    color: #4057ea;
 }
 
 .todo-list {
@@ -138,31 +162,21 @@ input[type="checkbox"] {
     background-size: contain;
     background-repeat: no-repeat;
     border: none;
+    cursor: pointer;
+    background-color: transparent;
 }
-.dark-mode{
+.light-theme .dark-mode {
     background-image: url(solar_moon.png);
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: none;
 }
-.dark-mode.light-theme{
-    background-image: url(solar_moon.png);
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: none;
+
+.dark-theme .dark-mode {
+    background-image: url(solar_sun-bold.png);
 }
-.dark-mode.dark-theme{
-    background-image: url(solar_moon.png);
-    width: 500px;
-    height: 500px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: none;
-}
-.dark-mode:hover{
+
+.dark-mode:hover {
     background-image: url(solar_moon-hover.png);
+}
+
+.dark-theme .dark-mode:hover {
+    background-image: url(solar_sun-bold-2.png);
 }

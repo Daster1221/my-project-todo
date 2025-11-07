@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <title>To-Do List</title>
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="light-theme">
     <div class="container">
         <div class="header">
             <h1>📝 TODO LIST</h1>
@@ -18,7 +17,7 @@
             <div class="form-group">
                 <input type="text" class="todo-input" placeholder="Введите новую задачу..." required>
                 <button type="submit" class="add-btn">Добавить</button>
-                <button type="submit" id="themeToggle" class="dark-mode"></button>
+                <button type="button" id="themeToggle" class="dark-mode"></button>
             </div>
         </form>
 
@@ -50,5 +49,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
