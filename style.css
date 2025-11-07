@@ -3,14 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
+body{
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+body.light-theme {
     font-family: Arial, sans-serif;
     background: #f0f0f0;
     padding: 20px;
     width: 100%;
 }
-
+body.dark-theme {
+    font-family: Arial, sans-serif;
+    background: #000000;
+    padding: 20px;
+    width: 100%;
+}
 .container {
     width: 80%;
     margin: 0 auto;
@@ -119,4 +130,39 @@ input[type="checkbox"] {
     padding: 50px 20px;
     color: #888;
     font-style: italic;
+}
+.dark-mode {
+    background-image: url(solar_moon.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+.dark-mode{
+    background-image: url(solar_moon.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+.dark-mode.light-theme{
+    background-image: url(solar_moon.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+.dark-mode.dark-theme{
+    background-image: url(solar_moon.png);
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+.dark-mode:hover{
+    background-image: url(solar_moon-hover.png);
 }
