@@ -8,45 +8,49 @@
 
 <body class="light-theme">
     <div class="container">
-        <div class="header">
-            <h1>📝 TODO LIST</h1>
+        <div class="MAIN">
+            <h1>TODO LIST</h1>
             <p>Планируйте свои дела</p>
         </div>
 
         <form class="todo-form">
             <div class="form-group">
-                <input type="text" class="todo-input" placeholder="Введите новую задачу..." required>
-                <button type="submit" class="add-btn">Добавить</button>
+                <input type="text" class="todo-input" id="search" placeholder="Поиск задачи..." required>
+                <select class="filter-select" id="filterSelect">
+                    <option value="all">Все задачи</option>
+                    <option value="active">Активные</option>
+                    <option value="completed">Выполненные</option>
+                </select>
                 <button type="button" id="themeToggle" class="dark-mode"></button>
             </div>
         </form>
-
-        <div class="todo-list">
-            <div class="todo-item">
-                <input type="checkbox">
-                <span class="todo-text">Пример задачи 1</span>
+        
+        <ul class="todo-list" id="note_list">
+            
+        </ul>
+    </div>
+    
+    <div class="block-add-new">
+        <button class="add-new" id="openModal">+</button>
+    </div>
+    
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-window">
+            <div class="modal-header">
+                <h3 id="modalTitle">Добавить задачу</h3>
+                <span class="close-btn" id="closeModal">&times;</span>
             </div>
-
-            <div class="todo-item completed">
-                <input type="checkbox" checked>
-                <span class="todo-text">Выполненная задача</span>
+            <div class="modal-content">
+                <form class="todo-form">
+                    <div class="form-group">
+                        <input type="text" class="todo-input" id="note_text" placeholder="Введите задачу..." required>
+                        <button type="button" id="add_note" class="add-btn">Добавить</button>
+                    </div>
+                </form>
             </div>
-
-            <div class="todo-item">
-                <input type="checkbox">
-                <span class="todo-text">Пример задачи 2</span>
-            </div>
-
-            <div class="todo-item">
-                <input type="checkbox">
-                <span class="todo-text">Еще одна важная задача</span>
-            </div>
-        </div>
-
-        <div class="stats">
-            Всего задач: 4 - Выполнено: 1 - Осталось: 3
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
